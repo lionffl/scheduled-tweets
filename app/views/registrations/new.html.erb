@@ -1,6 +1,6 @@
 <h1>Sign up</h1>
 
-<%= form_with model: @user, url: sign_up_path, data: { turbo: false }  do |form| %>
+<%= form_with model: @user, url: sign_up_path do |form| %>
 <% if @user.errors.any? %>
   <div class="alert alert-danger">
     <% @user.errors.full_messages.each do |message| %>
@@ -8,6 +8,7 @@
     <% end %>
   </div>
 <% end %>
+
   <div class="mb-3">
     <%= form.text_field :email, class: "form-control", autocomplete: "false", placeholder: "Email" %>
   </div>

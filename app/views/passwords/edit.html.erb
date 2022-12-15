@@ -1,6 +1,6 @@
-<h1>Sign up</h1>
+<h1>Update password</h1>
 
-<%= form_with model: @user, url: sign_up_path do |form| %>
+<%= form_with model: Current.user, url: edit_password_path do |form| %>
 <% if form.object.errors.any? %>
   <div class="alert alert-danger">
     <% form.object.errors.full_messages.each do |message| %>
@@ -8,10 +8,6 @@
     <% end %>
   </div>
 <% end %>
-
-  <div class="mb-3">
-    <%= form.text_field :email, class: "form-control", autocomplete: "false", placeholder: "Email" %>
-  </div>
   <div class="mb-3">
     <%= form.password_field :password, class: "form-control", autocomplete: "false", placeholder: "Password" %>
   </div>
@@ -19,6 +15,6 @@
     <%= form.password_field :password_confirmation, class: "form-control", autocomplete: "false", placeholder: "Password Confirmation" %>
   </div>
   <div class="mb-3">
-    <%= form.submit "Sign up", class: "btn btn-primary" %>
+    <%= form.submit "Update password", class: "btn btn-primary" %>
   </div>
 <% end %>

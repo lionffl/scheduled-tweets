@@ -7,7 +7,14 @@ class OmniauthCallbacksController < ApplicationController
       token: auth.credentials.token,
       secret: auth.credentials.secret,
     )
-    redirect_to twitter_accounts_path, notice: "Twitter account #{twitter_account.username} connected"
+    if twitter_account.errors
+      twitter_account.errors.full_messages.each do |message|
+        flash[:alert] = message
+        redirect_to twitter_accounts_path
+      end
+    else
+      redirect_to twitter_accounts_path, notice: "Twitter account #{twitter_account.username} connected"
+    end
   end
 
   def auth

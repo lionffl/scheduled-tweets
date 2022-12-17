@@ -21,7 +21,7 @@
     <%= button_to "Schedule", tweet, method: :new, class: "btn btn-primary me-2" %>
 
     <% if tweet.persisted? %>
-      <%= button_to "Delete", tweet, method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }, class: "btn btn-outline-danger" %>
+      <%= link_to "Delete",  form.object, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?'}, class: "btn btn-outline-danger" %>
     <% end %>
   </div>
 <% end %>

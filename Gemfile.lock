@@ -84,6 +84,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.1.10)
+    connection_pool (2.3.0)
     crass (1.0.6)
     date (3.3.1)
     debug (1.7.0)
@@ -207,6 +208,8 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redis-client (0.11.2)
+      connection_pool
     regexp_parser (2.6.1)
     reline (0.3.2)
       io-console (~> 0.5)
@@ -216,6 +219,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sidekiq (7.0.2)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.11.0)
     simple_oauth (0.3.1)
     snaky_hash (2.0.1)
       hashie
@@ -286,6 +294,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4)
   selenium-webdriver
+  sidekiq (~> 7.0)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails

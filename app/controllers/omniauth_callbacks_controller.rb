@@ -12,9 +12,8 @@ class OmniauthCallbacksController < ApplicationController
         flash[:alert] = message
         redirect_to twitter_accounts_path
       end
-    else
-      redirect_to twitter_accounts_path, notice: "Twitter account #{twitter_account.username} connected"
     end
+   redirect_to twitter_accounts_path, notice: "Twitter account #{twitter_account.username} connected"
   end
 
   def auth

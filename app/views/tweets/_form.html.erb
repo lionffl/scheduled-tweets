@@ -18,7 +18,7 @@
   </div>
 
   <div class="d-flex">
-    <%= button_to "Schedule", tweet, method: :new, class: "btn btn-primary me-2" %>
+    <%= button_to "Schedule", tweet, method: :new, class: "btn btn-outline-light btn-md px-3 me-2" %>
 
     <% if tweet.persisted? %>
       <%= link_to "Delete",  form.object, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?'}, class: "btn btn-outline-danger" %>

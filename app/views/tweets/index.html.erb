@@ -2,11 +2,11 @@
   <h1 class="mt-4" style="color: white; font-style: italic;">Tweets</h1>
 
   <% if Current.user.twitter_accounts.any? %>
-    <%= link_to "Schedule a tweet", new_tweet_path, class: "btn btn-outline-light btn-md px-3" %>
+    <%= link_to "Schedule a tweet", new_tweet_path, class: "btn btn-outline-light btn-md px-3 me-2" %>
   <% end %>
 
 <% if Current.user.twitter_accounts.none? %>
-    <%= button_to "Connect Twitter", "/auth/twitter", data: { turbo: "false" }, method: :post, class: "btn btn-outline-light btn-lg px-5" %>
+    <%= button_to "Connect Twitter", "/auth/twitter", data: { turbo: "false" }, method: :post, class: "btn btn-outline-light btn-md px-3 me-2" %>
 <% end %>
 </div>
 

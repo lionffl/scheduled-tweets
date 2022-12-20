@@ -44,4 +44,5 @@ If you'd like to contribute to the project, please follow these guidelines:
 
 ## Next features
 
-* Set up mailer for password reset.
+* Set up mailer for password reset;
+* Contact/About page

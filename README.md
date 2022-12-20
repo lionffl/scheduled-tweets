@@ -42,6 +42,9 @@ If you'd like to contribute to the project, please follow these guidelines:
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request.
 
-## Next features
+## Next features / implementations
 
-* Set up mailer for password reset.
+* Set up mailer for password reset
+* Add a Contact/About page
+* Add a Footer
+* Adjust all pages/forms layout to the same pattern

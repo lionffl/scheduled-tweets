@@ -46,6 +46,7 @@ If you'd like to contribute to the project, please follow these guidelines:
 
 * Set up mailer for password reset;
 * Contact/About page
+* Footer
 
 ## Contact
 

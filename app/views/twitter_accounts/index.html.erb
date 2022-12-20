@@ -1,5 +1,5 @@
 <div class="d-flex align-items-center justify-content-between">
-  <h1 class="mt-4">Twitter Accounts</h1>
+  <h1 class="mt-4" style="font-style: italic;">Twitter Accounts</h1>
   <%= button_to "Connect Twitter", "/auth/twitter", data: { turbo: "false" }, method: :post, class: "btn btn-outline-light btn-md px-3 me-2" %>
 </div>
 <% @twitter_accounts.each do |twitter_account| %>

@@ -30,7 +30,7 @@ The server should now be running at http://localhost:3000.
 
 ## Usage
 
-Local environment is set to uses sqlite as database.
+Local environment is set to use sqlite as database.
 
 Production (deployment setup) is defined to use fly.io and uses postgresql.
 

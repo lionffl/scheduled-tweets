@@ -14,31 +14,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository: `git clone git@github.com:lionffl/scheduled-tweets.git`
 
-`
-git clone git@github.com:lionffl/scheduled-tweets.git
-`
-2. Navigate to the directory:
-`
-cd scheduled-tweets
-`
-3. Switch to development branch
-`
-git checkout development
-`
-4. Install the required dependencies:
-`
-bundle install
-`
-5. Set up the database:
-`
-bundle install
-`
-6. Start the server
-`
-rails server
-`
+2. Navigate to the directory: `cd scheduled-tweets`
+
+3. Switch to development branch `git checkout development`
+
+4. Install the required dependencies: `bundle install`
+
+5. Set up the database: `rails db:migrate`
+
+6. Start the server `rails server`
+
 The server should now be running at http://localhost:3000.
 
 ## Usage

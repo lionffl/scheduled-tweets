@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: "main#index"
 
   # get "about", to: "about#index"
+  get "tos", to: "tos#index"
+  get "privacy", to: "privacy#index"
 
   get "password", to: "passwords#edit", as: :edit_password
   patch "password", to: "passwords#update"

@@ -30,7 +30,9 @@ The server should now be running at http://localhost:3000.
 
 ## Usage
 
-For local environment, the application uses sqlite as database. On main branch, the production environment is set to use posgresql and to be hostes at fly.io.
+Local environment is set to use sqlite as database.
+
+Production (deployment setup) is defined to use fly.io and uses postgresql.
 
 ## Contributing
 
@@ -48,3 +50,7 @@ If you'd like to contribute to the project, please follow these guidelines:
 * Add a Contact/About page
 * Add a Footer
 * Adjust all pages/forms layout to the same pattern
+
+## Contact
+
+* lionffl@gmail.com / felipelima@geografialinks.com

@@ -70,3 +70,13 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "localhost:3000" }
   # config.active_job.queue_adapter = :sidekiq
 end
+
+ActionMailer::Base.smtp_settings = {
+  :user_name => Rails.application.credentials.dig(:aws, :smtp_user),
+  :password => Rails.application.credentials.dig(:aws, :smtp_pass),
+  :domain => 'tweet-schedule.geografialinks.com',
+  :address => 'email-smtp.sa-east-1.amazonaws.com',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}

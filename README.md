@@ -46,7 +46,6 @@ If you'd like to contribute to the project, please follow these guidelines:
 
 ## Next features / implementations
 
-* Set up mailer for password reset
 * Add a Contact/About page
 * Add a Footer
 * Adjust all pages/forms layout to the same pattern

@@ -72,10 +72,10 @@ Rails.application.configure do
 end
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
-  :password => Rails.application.credentials.dig(:sendgrid, :api_secret), # This is the secret sendgrid API key which was issued during API key creation
+  :user_name => Rails.application.credentials.dig(:aws, :smtp_user),
+  :password => Rails.application.credentials.dig(:aws, :smtp_pass),
   :domain => 'tweet-schedule.geografialinks.com',
-  :address => 'smtp.sendgrid.net',
+  :address => 'email-smtp.sa-east-1.amazonaws.com',
   :port => 587,
   :authentication => :plain,
   :enable_starttls_auto => true
